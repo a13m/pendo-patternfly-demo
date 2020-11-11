@@ -65,7 +65,7 @@
 				account: account,
 				sanitizeUrl: function (url) {
 					console.debug('sanitizeUrl', url);
-					return 'https://www.google.com';
+					return url === 'https://support.pendo.io' ? 'https://www.google.com' : url;
 				}
 			});
 
