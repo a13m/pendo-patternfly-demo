@@ -62,11 +62,11 @@
 					id: queryString.visitor || 'testuser@pendo'
 				},
 				apiKey: '6cd671c5-47e9-4840-475b-dcbd3fec403d',
-				account: account,
-				sanitizeUrl: function (url) {
-					console.debug('sanitizeUrl', url);
-					return url === 'https://support.pendo.io' ? 'https://www.google.com' : url;
-				}
+				account: account
+// 				sanitizeUrl: function (url) {
+// 					console.debug('sanitizeUrl', url);
+// 					return url === 'https://support.pendo.io' ? 'https://www.google.com' : url;
+// 				}
 			});
 
 		})('6cd671c5-47e9-4840-475b-dcbd3fec403d');
